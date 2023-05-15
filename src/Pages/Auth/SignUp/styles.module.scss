@@ -1,0 +1,29 @@
+.login_container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .card {
+        width: 400px;
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+         align-items: center;
+        flex-direction: column;
+        gap: 20px;
+       
+        input {
+            width: 100%;
+        }
+    }
+
+    
+
+}
+
+.link {
+    all: unset;
+    cursor: pointer;
+    color: #228be6;
+}
