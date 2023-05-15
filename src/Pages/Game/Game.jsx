@@ -26,7 +26,6 @@ const Home = () => {
                     setData(
                       {
                         ...data,
-                        // solution: "testtesta",
                         solution: newData[randomIndex].motCle,
                         indices: newData[randomIndex].indices,
                         score: newData[randomIndex].scoreMot
