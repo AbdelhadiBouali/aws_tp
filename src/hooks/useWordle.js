@@ -91,8 +91,8 @@ const useWordle = (solution) => {
         return
       }
       // check word is 5 chars
-      if (currentGuess.length !== solution.lengtht) {
-        console.log('word must be 5 chars.')
+      if (currentGuess.length !== (solution.length)) {
+        console.log('word must be 5 chars.', )
         return
       }
       const formatted = formatGuess()
@@ -103,7 +103,7 @@ const useWordle = (solution) => {
       return
     }
     if (/^[A-Za-z]$/.test(key)) {
-      if (currentGuess.length < solution.length + 1) {
+      if (currentGuess.length < solution.length) {
         setCurrentGuess(prev => prev + key)
       }
     }
