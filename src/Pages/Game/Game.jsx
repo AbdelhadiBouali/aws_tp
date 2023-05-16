@@ -48,7 +48,7 @@ const Home = () => {
 
   return (
     <div className="App">
-      <h1>Wordle</h1>
+      <h1>Wordy</h1>
 
       {
         data.solution
