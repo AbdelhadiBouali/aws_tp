@@ -100,7 +100,7 @@ export function HeaderMegaMenu() {
     <Box pb={120} >
       <Header height={100} px="md">
         <Group position="apart" sx={{ height: '100%' }}>
-          <Text size="2.5rem" color='#228be6' weight="bold"  transform='capitalize'> wordle </Text>
+          <Text size="2.5rem" color='#228be6' weight="bold"  transform='capitalize'> wordy </Text>
 
           <Group className={classes.hiddenMobile}>
             <Button onClick={() => {navigate('/login')}}  variant="default">Se Connecter</Button>
