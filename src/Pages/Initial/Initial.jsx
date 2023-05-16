@@ -116,7 +116,7 @@ export function HeaderMegaMenu() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="wordle"
+        title="wordy"
         className={classes.hiddenDesktop}
         zIndex={1000000}
       >
@@ -143,7 +143,7 @@ export function HeaderMegaMenu() {
       </Card.Section>
 
       <Group position="center" mt="md" mb="xs">
-        <Text weight={500}>Wordle</Text>
+        <Text weight={500}>Wordy</Text>
         
       </Group>
 
