@@ -11,17 +11,18 @@ import Countdown from 'react-countdown'
 export default function Wordle({ solution, indices, score }) {
   const { currentGuess, guesses, turn, isCorrect, handleKeyup } = useWordle(solution)
   const [showModal, setShowModal] = useState(false)
+  const [timer] = useState(Date.now() + 60000 * 2)
 
-  const renderer = ({ hours, minutes, seconds, completed }) => {
-  if (completed) {
+//   const renderer = ({ hours, minutes, seconds, completed }) => {
+//   if (completed) {
    
-    setShowModal(true)
-    return <span>Time is up!</span>;
-  } else {
+//     setShowModal(true)
+//     return <span>Time is up!</span>;
+//   } else {
     
-    return <span>{minutes}mm : {seconds}ss</span>;
-  }
-};
+//     return <span>{minutes}mm : {seconds}ss</span>;
+//   }
+// };
 
 
 useEffect(() =>  {
@@ -47,7 +48,7 @@ useEffect(() =>  {
 
   return (
     <div>
-           <Countdown renderer={renderer} date={Date.now() + 60000 * 20} />
+      <Countdown date={timer} />
       <Grid solution={solution} guesses={guesses} currentGuess={currentGuess} turn={turn} />
       {/* <Keypad usedKeys={usedKeys} /> */}
       <Indices indice={indices[turn ?? 0]} /> 

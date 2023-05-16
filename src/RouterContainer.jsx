@@ -8,9 +8,6 @@ import Profile from './Pages/Profile/Profile'
 import Initial  from './Pages/Initial/Initial'
 
 const RouterContainer = () => {
-
-
-
   return (
     <Routes>
         <Route path='/' element={<Initial/>} />
@@ -21,7 +18,7 @@ const RouterContainer = () => {
           <ProtectedRoutes component={Profile} />
         } />
 
-        {/* <ProtectedRoutes exact path="/home" component={Home} authed={isA} /> */}
+    
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
          <Route path="*" element={<Login />} />
