@@ -136,7 +136,7 @@ export function HeaderMegaMenu() {
         <Card shadow="sm" padding="lg" radius="md" withBorder>
         <Card.Section component="a" href="https://mantine.dev/">
         <Image
-          src="./wordle.jpg"
+          src="./wordle.jpeg"
           height={300}
           alt="Norway"
         />
