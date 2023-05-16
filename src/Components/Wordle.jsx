@@ -14,11 +14,11 @@ export default function Wordle({ solution, indices, score }) {
 
   const renderer = ({ hours, minutes, seconds, completed }) => {
   if (completed) {
-    // Render a completed state
+   
     setShowModal(true)
     return <span>Time is up!</span>;
   } else {
-    // Render a countdown
+    
     return <span>{minutes}mm : {seconds}ss</span>;
   }
 };

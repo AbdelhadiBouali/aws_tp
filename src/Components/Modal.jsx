@@ -47,7 +47,7 @@ export default function Modal({ isCorrect, solution, turn, score }) {
         <div>
           <h1>Vous gagnez!</h1>
           <p className="solution">{solution}</p>
-          <p>Vous avez trouvé la solution dans {turn} suppositions :)</p>
+          <p>Vous avez trouvé la solution dans {turn} essaies :)</p>
           <button   onClick={() => navigate(-1)}>Voir Ton Résultat</button>
         </div>
       )}
