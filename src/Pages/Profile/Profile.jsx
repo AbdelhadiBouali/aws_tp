@@ -122,7 +122,7 @@ export function Profile() {
     <Box pb={120} >
       <Header height={100} px="md">
         <Group position="apart" sx={{ height: '100%' }}>
-          <Text size="2.5rem" color='#228be6' weight="bold"  transform='capitalize'> wordle </Text>
+          <Text size="2.5rem" color='#228be6' weight="bold"  transform='capitalize'> wordy </Text>
 
           <Group className={classes.hiddenMobile}>
             <Button onClick={handleSignOUt}  variant="default">Deconnecter</Button>
@@ -138,7 +138,7 @@ export function Profile() {
         onClose={closeDrawer}
         size="100%"
         padding="md"
-        title="wordle"
+        title="wordy"
         className={classes.hiddenDesktop}
         zIndex={1000000}
       >
